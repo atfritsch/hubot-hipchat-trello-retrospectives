@@ -6,8 +6,8 @@
 #
 # Configuration:
 #   TRELLO_KEY
-#		TRELLO_TOKEN
-#		TRELLO_ORGANIZATION
+#   TRELLO_TOKEN
+#   TRELLO_ORGANIZATION
 #
 # Commands:
 #   hubot retro: (text of issue) -  Adds a card to the Trello board with the 
