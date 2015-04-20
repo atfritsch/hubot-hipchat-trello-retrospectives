@@ -25,7 +25,6 @@ var moment 			= require('moment');
 var _ 				= require('lodash');
 var async 			= require('async');
 var request 		= require('request');
-var util 			= require('util');
 var Trello 			= require("node-trello");
 var t 				= new Trello(process.env.TRELLO_KEY, process.env.TRELLO_TOKEN);
 var retroColumns 	= ["Uncategorized", "Went Well", "Needs to Change", "Question & Discussion", "Action Items"];
