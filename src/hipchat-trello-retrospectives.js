@@ -11,9 +11,9 @@
 #
 # Commands:
 #   hubot retro: (text of issue) -  Adds a card to the Trello board with the 
-#									name of the current HipChat room within a specified Trello 
-#									organization.  If the board doesn't exist, the board is 
-#									created and assigned lists representing commonly used 
+#                 name of the current HipChat room within a specified Trello 
+#                 organization.  If the board doesn't exist, the board is 
+#                 created and assigned lists representing commonly used 
 #                 retrospective categories.
 # Notes:
 # 
