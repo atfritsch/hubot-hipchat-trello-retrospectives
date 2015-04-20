@@ -57,15 +57,12 @@ module.exports = function(robot) {
 //***** HELPER FUNCTIONS *****
 
   function createBoard(room, callback) {
-    t.post("/1/boards", { idOrganization: process.env.TRELLO_ORGANIZATION, name: room }, function(err, data) {
+    t.post("/1/boards", { idOrganization: process.env.TRELLO_ORGANIZATION, name: room, prefs_permissionLevel: "org" }, function(err, data) {
       if (err) throw err;
 
       var boardId = data.id;
 
       async.series([
-        function(subcallback) {
-          makeBoardSelfJoin(boardId, subcallback);
-        },
         function(subcallback) {
           removeDefaultLists(boardId, subcallback);
         },
@@ -136,13 +133,3 @@ module.exports = function(robot) {
       }
     })
   }
-
-  function makeBoardSelfJoin(boardId, callback) {
-    t.get("/1/boards/" + boardId + "/prefs/selfJoin", { value: true }, function(err, board) {
-      if (err) throw err;
-      callback();
-    });
-  }
-
-
-
