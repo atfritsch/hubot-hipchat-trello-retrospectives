@@ -62,15 +62,17 @@ module.exports = function(robot) {
 
       var boardId = data.id;
 
-      async.series([
-        function(subcallback) {
-          removeDefaultLists(boardId, subcallback);
-        },
-        function(subcallback) {
-          addRetroLists(boardId, retroColumns, subcallback);
-        },
+      async.series(
+      	[
+	        function(subcallback) {
+	          removeDefaultLists(boardId, subcallback);
+	        },
+	        function(subcallback) {
+	          addRetroLists(boardId, retroColumns, subcallback);
+	        }
+	    	],
         callback(boardId)
-      ]);
+      );
 
     });
 
