@@ -5,8 +5,8 @@
 #
 # Configuration:
 #   TRELLO_KEY
-#	TRELLO_TOKEN
-#	TRELLO_ORGANIZATION
+#		TRELLO_TOKEN
+#		TRELLO_ORGANIZATION
 #
 # Commands:
 #   hubot retro: (text of issue) -  Adds a card to the Trello board with the name of the current HipChat room
@@ -21,12 +21,12 @@
 #
 ***/
 
-var moment 			= require('moment');
-var _ 				= require('lodash');
-var async 			= require('async');
-var request 		= require('request');
-var Trello 			= require("node-trello");
-var t 				= new Trello(process.env.TRELLO_KEY, process.env.TRELLO_TOKEN);
+var moment 				= require('moment');
+var _ 						= require('lodash');
+var async 				= require('async');
+var request 			= require('request');
+var Trello 				= require("node-trello");
+var t 						= new Trello(process.env.TRELLO_KEY, process.env.TRELLO_TOKEN);
 var retroColumns 	= ["Uncategorized", "Went Well", "Needs to Change", "Question & Discussion", "Action Items"];
 
 //***** HUBOT RESPONSE *****
