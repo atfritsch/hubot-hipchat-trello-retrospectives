@@ -71,7 +71,9 @@ module.exports = function(robot) {
 	          addRetroLists(boardId, retroColumns, subcallback);
 	        }
 	    	],
-        callback(boardId)
+	    	function(err, results) {
+        	callback(boardId);
+        }
       );
 
     });
