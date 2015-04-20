@@ -14,10 +14,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/hubot-scripts/hubot-hipchat-trello-retrospectives.git"
+    "url": "git://github.com/sillfishes/hubot-hipchat-trello-retrospectives.git"
   },
   "bugs": {
-    "url": "https://github.com/hubot-scripts/hubot-hipchat-trello-retrospectives/issues"
+    "url": "https://github.com/sillfishes/hubot-hipchat-trello-retrospectives/issues"
   },
   "dependencies": {
     "async": "^0.9.0",
