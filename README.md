@@ -2,7 +2,7 @@
 
 A hubot script that allows users to add cards to a trello board used to run project retrospectives
 
-See [`src/hipchat-trello-retrospectives.coffee`](src/hipchat-trello-retrospectives.coffee) for full documentation.
+See [`src/hipchat-trello-retrospectives.js`](src/hipchat-trello-retrospectives.js) for full documentation.
 
 ## Installation
 
