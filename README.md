@@ -19,6 +19,6 @@ Then add **hubot-hipchat-trello-retrospectives** to your `external-scripts.json`
 ## Sample Interaction
 
 ```
-user1>> hubot hello
-hubot>> hello!
+user1>> hubot retro: Start writing unit tests
+hubot>> Successfully added retrospective card: https://trello.com/c/lxmuhQ26
 ```
